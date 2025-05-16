@@ -1,0 +1,75 @@
+.contact-intro {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #e0e6ed;
+  text-align: center;
+}
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 2.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: #16213e;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 12px #00c3ff33;
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1), box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+  min-width: 260px;
+}
+.contact-item-hidden {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+}
+.contact-item-animated {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.contact-item:hover, .contact-item:focus {
+  background: #00c3ff33;
+  box-shadow: 0 0 32px #00c3ff99, 0 0 8px #0ff99;
+  color: #00c3ff;
+  outline: none;
+}
+.contact-icon {
+  font-size: 2rem;
+  color: #00c3ff;
+  filter: drop-shadow(0 0 8px #00c3ff99);
+  transition: color 0.3s, filter 0.3s;
+}
+.contact-item:hover .contact-icon, .contact-item:focus .contact-icon {
+  color: #fff;
+  filter: drop-shadow(0 0 12px #00c3ffcc);
+}
+.contact-label {
+  font-size: 1.1rem;
+  font-family: 'Fira Mono', 'Consolas', 'monospace', 'Segoe UI', Arial, sans-serif;
+  word-break: break-all;
+}
+@media (max-width: 700px) {
+  .contact-list {
+    gap: 1rem 0.5rem;
+  }
+  .contact-item {
+    padding: 0.7rem 1rem;
+    min-width: 160px;
+    font-size: 0.98rem;
+  }
+  .contact-icon {
+    font-size: 1.3rem;
+  }
+  .contact-label {
+    font-size: 0.95rem;
+  }
+} 

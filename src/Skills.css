@@ -1,0 +1,137 @@
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.skill-bar-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.skill-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3rem;
+}
+.skill-label {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+.skill-percent {
+  font-size: 1rem;
+  color: #00c3ff;
+  font-weight: 700;
+  min-width: 40px;
+  text-align: right;
+}
+.skill-bar-bg {
+  width: 100%;
+  height: 18px;
+  background: #16213e;
+  border-radius: 10px;
+  box-shadow: 0 0 8px #00c3ff33;
+  overflow: hidden;
+  position: relative;
+}
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00c3ff 0%, #0ff 100%);
+  border-radius: 10px 0 0 10px;
+  box-shadow: 0 0 12px #00c3ff99;
+  transition: width 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+@media (max-width: 700px) {
+  .skills-list {
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .skill-bar-container {
+    max-width: 98vw;
+  }
+  .skill-label {
+    font-size: 0.98rem;
+  }
+  .skill-percent {
+    font-size: 0.95rem;
+  }
+  .skill-bar-bg {
+    height: 12px;
+  }
+}
+
+.skills-circles-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem 2.5rem;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+.skill-circle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 130px;
+  margin-bottom: 1.5rem;
+}
+.skill-svg {
+  display: block;
+}
+.skill-bg {
+  stroke: #16213e;
+  opacity: 0.7;
+}
+.skill-fg {
+  stroke: url(#skill-gradient);
+  stroke: #00c3ff;
+  filter: drop-shadow(0 0 8px #00c3ff99);
+  stroke-linecap: round;
+}
+.skill-percent-text {
+  font-size: 1.2rem;
+  fill: #00c3ff;
+  font-weight: bold;
+  text-shadow: 0 0 8px #00c3ff99;
+  font-family: 'Fira Mono', 'Consolas', 'monospace', 'Segoe UI', Arial, sans-serif;
+}
+.skill-circle-label {
+  margin-top: 0.7rem;
+  font-size: 1.05rem;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 900px) {
+  .skills-circles-list {
+    gap: 1.2rem 1.2rem;
+    margin-top: 1.2rem;
+  }
+  .skill-circle-container {
+    width: 100px;
+  }
+  .skill-percent-text {
+    font-size: 1rem;
+  }
+  .skill-circle-label {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 600px) {
+  .skills-circles-list {
+    gap: 0.7rem 0.7rem;
+    margin-top: 0.7rem;
+  }
+  .skill-circle-container {
+    width: 80px;
+  }
+  .skill-percent-text {
+    font-size: 0.8rem;
+  }
+  .skill-circle-label {
+    font-size: 0.8rem;
+  }
+} 

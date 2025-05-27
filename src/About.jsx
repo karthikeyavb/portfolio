@@ -51,7 +51,7 @@ function About() {
     <section className="about about-flex">
       <div className="about-photo">
         {/* Replace src with your photo path in /src/assets or a URL */}
-        <img src="/src/assets/profile.jpg" alt="Karthikeya" className="profile-pic" />
+        <img src="/profile.jpg" alt="Karthikeya" className="profile-pic" />
       </div>
       <div className="about-text">
         <h2>About Me</h2>

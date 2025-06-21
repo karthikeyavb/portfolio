@@ -2,6 +2,11 @@ import React, { useEffect, useState } from 'react';
 import './Projects.css';
 
 const projects = [
+   {
+    title: 'Sorting Algorithms',
+    desc: 'A website to visualize sorting algorithms.',
+    url: 'https://sortingalgor.netlify.app/'
+  },
   {
     title: 'Apeksha Learn',
     desc: 'A web app to explore and learn about the coding languages.',

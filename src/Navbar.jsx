@@ -9,6 +9,16 @@ function Navbar({ sections, onSectionChange, currentSection }) {
             <button onClick={() => onSectionChange(section)}>{section}</button>
           </li>
         ))}
+        <li>
+          <a
+            href="/vbresume (8).pdf"
+            className="resume-btn"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download Resume
+          </a>
+        </li>
       </ul>
     </nav>
   );

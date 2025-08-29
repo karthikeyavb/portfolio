@@ -3,6 +3,12 @@ import './Projects.css';
 
 const projects = [
    {
+    title: 'CVortex-ATS Friendly Resume',
+    desc: 'An AI-powered web application built with the MERN stack to help users create and optimize resumes that successfully pass through Applicant Tracking Systems (ATS).',
+    url: 'https://github.com/karthikeyavb/cvortex'
+  },
+      
+   {
     title: 'Sorting Algorithms',
     desc: 'A website to visualize sorting algorithms.',
     url: 'https://sortingalgor.netlify.app/'
